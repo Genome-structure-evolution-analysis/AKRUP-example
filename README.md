@@ -36,7 +36,7 @@ For any two genomes and the outgroup (or reference genome), the continuous synte
 
 Using outgroups as a reference, we found that the continuous remodelling of plant genomes after polyploidy often results in conserved long SRs breaking into multiple small SRs or experiencing severe gene loss in modern genomes. However, these small or gene-lost SRs still essentially belong to a CSR, and thus AKRUP still treats these ESRs as a whole, thereby minimising the impact of species-specific changes on ancestral karyotype inference.
 
-![Fig1](docfigures/Fig1.png)
+![Fig1](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Fig1.png)
 
 **Figure 1. Ancestral karyotype reconstruction universal pipeline (AKRUP).**  The "bottom-up" inference of ancestral genome structure is divided into 6 main steps: inference of anchor genes, identification of synteny regions (SRs), *Ks* analysis, identification of event-related synteny regions (ESRs), maximal contiguous synteny regions (CSRs), and contiguous ancestral regions (CARs). *μ*1 and *μ*2 indicates the evolutionary event-related peaks (*Ks* distribution) between the outgroup with species A and B. Dashed circles in the synteny dotplot indicates gene loss. CSRO, CSRA, and CSRB indicates the identified CSRs among the outgroup, species A, and species B. Karyotype evolution indicates the "top-down" identification of paleochromosomes evolutionary trajectory.
 
@@ -52,7 +52,7 @@ The polyploidization events and phylogenetic relationships of the major branches
 
 
 
-<div align=center><img src="docfigures/Fig2-tree.png"  width="80%"></div>
+<div align=center><img src="https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Fig2-tree.png"  width="80%"></div>
 
 **Figure 2. Phylogenetic tree of 8 representative monocots and the outgroup *A. trichopoda*.**
 
@@ -84,7 +84,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   
 
-  ![new.gff-demo](docfigures/new.gff-demo.png)
+  ![new.gff-demo](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/new.gff-demo.png)
 
   
 
@@ -98,7 +98,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   
 
-  ![lens-demo](docfigures/lens-demo.png)
+  ![lens-demo](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/lens-demo.png)
 
   
 
@@ -108,7 +108,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   
   `AKRUP -rb run_blast-Os_Tel.conf`
   
-  ![blast-result](docfigures/blast-result.png)
+  ![blast-result](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/blast-result.png)
   
   
 
@@ -118,7 +118,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   `AKRUP -d blast_dotplot-Os_Tel.conf`
 
-  ![Os_Bdi_Tel-blast-dotplot](docfigures/Os_Bdi_Tel-blast-dotplot.png)
+  ![Os_Bdi_Tel-blast-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Os_Bdi_Tel-blast-dotplot.png)
 
 + The anchored genes were then analyzed for collinearity to identify synteny regions (SRs) using the `-rc` parameter of AKRUP.
 
@@ -127,7 +127,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   `AKRUP -rc run_ColinearScan-Os_Tel.conf`
 
   
-  ![Colinearscan-result](docfigures/Colinearscan-result.png)
+  ![Colinearscan-result](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Colinearscan-result.png)
   
   
 
@@ -137,7 +137,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   `AKRUP -bd block_dotplot-Os_Bdi.conf`
 
-  ![Os_Bdi_Tel-block-dotplot](docfigures/Os_Bdi_Tel-block-dotplot.png)
+  ![Os_Bdi_Tel-block-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Os_Bdi_Tel-block-dotplot.png)
 
 + Subsequently, *Ks* was calculated for gene pairs within the SRs using the `-rk` parameter of AKRUP.
 
@@ -147,7 +147,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   
   
-  ![Ks-result](docfigures/ks-result.png)
+  ![Ks-result](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ks-result.png)
   
   
 
@@ -181,7 +181,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   | Ts                | chromosome translocation (1 for translocation, 0 for other cases). |
   
   
-  ![block-infos.png](docfigures/block-infos.png)
+  ![block-infos.png](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/block-infos.png)
 
 
 
@@ -200,15 +200,15 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   
   
   
-  ![event-block-infos](docfigures/event-block-infos.png)
+  ![event-block-infos](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/event-block-infos.png)
   
   
   
-  ![Os_Bdi_Tel-event-dotplot.png](docfigures/Os_Bdi_Tel-event-dotplot.png)
+  ![Os_Bdi_Tel-event-dotplot.png](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Os_Bdi_Tel-event-dotplot.png)
 
 
 
-![ks-distribute](docfigures/ks-distribute.png)
+![ks-distribute](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ks-distribute.png)
 
 
 
@@ -222,7 +222,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   
 
-  ![ksargs](docfigures/ksargs.png)
+  ![ksargs](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ksargs.png)
 
 + During the identification of event-related blocks, we found some non-event-related regions also have similar *Ks* as the event-related regions. This is due to the different evolutionary rates of the species, resulting in the *Ks* of some synteny regions sometimes coinciding with the event-related peak.
 
@@ -232,7 +232,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   
 
-  ![Os_Bdi_Tel-block_event-comparison-dotplot](docfigures/Os_Bdi_Tel-block_event-comparison-dotplot.png)
+  ![Os_Bdi_Tel-block_event-comparison-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Os_Bdi_Tel-block_event-comparison-dotplot.png)
 
   Next, based on the identified event-related regions, using Os as a reference, we identified the contiguous syntenic regions (CSRs) of the Bdi and Tel genomes, and generated the correspondence files for the CSRs, named ***. Correspondence.txt**.
 
@@ -246,11 +246,11 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   **The CSRs inferred in Bdi and Tel are shown below:**
 
-  ![Os_Bdi_Tel-CSR-dotplot](docfigures/Os_Bdi_Tel-CSR-dotplot.png)
+  ![Os_Bdi_Tel-CSR-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Os_Bdi_Tel-CSR-dotplot.png)
 
   **Correspondence file of Bdi and Tel are shown below:**
 
-  ![correspondence](docfigures/correspondence.png)
+  ![correspondence](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/correspondence.png)
 
   
 
@@ -294,7 +294,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   
   ~~~
 
-![CSR-demol-CSR-dotplot](docfigures/CSR-demo.png)
+![CSR-demol-CSR-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/CSR-demo.png)
 
 
 + Based on prepared correspondence files, use the `-ec` parameter of AKRUP to filter the block infos and add the CSR, module, and Translocation (Ts) information.
@@ -307,7 +307,7 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   ***.Polyploidy-block.information.csv**
 
-  ![Polyploidy-block](docfigures/Polyploidy-block.png)
+  ![Polyploidy-block](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Polyploidy-block.png)
 
 
 
@@ -384,17 +384,17 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
   APK-III inferred by AKRUP:
   
   
-  ![ancestral_karyotype](docfigures/ancestral_karyotype.png)
+  ![ancestral_karyotype](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ancestral_karyotype.png)
   
   Ancestral structure dotplots:
   
-    ![ancestral_karyotype-dotplot](docfigures/ancestral_karyotype-dotplot.png)
+    ![ancestral_karyotype-dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ancestral_karyotype-dotplot.png)
   
   Ancestral chromosome karyotype:
   
   
   
-  ![A.karyotype_chromosome](docfigures/A.karyotype_chromosome.png)
+  ![A.karyotype_chromosome](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/A.karyotype_chromosome.png)
   
   
   
@@ -523,12 +523,12 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
   Color patches corresponding to each chromosome of Tel in Os_Tel.
 
-  ![A-Os_Bdi_Tel-ancestral_chromosome_conf](docfigures/A.Os_Tel.top.color.pos.png)
+  ![A-Os_Bdi_Tel-ancestral_chromosome_conf](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/A.Os_Tel.top.color.pos.png)
 
 + CSR dotplot and event-related dotplot can also be drawn using the `-cd` and `-ed` parameters of AKRUP, and the dotplot can be adjusted to achieve better results.
 
   
-  ![Event-CSR.dotplot](docfigures/Event-CSR.dotplot.png)
+  ![Event-CSR.dotplot](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Event-CSR.dotplot.png)
 
 
 
@@ -573,7 +573,7 @@ After inferring the ancestral karyotype, to understand how the ancestor evolved 
 
   
 
-  ![ancestral_karyotype-trajectory](docfigures/ancestral_karyotype-trajectory.png)
+  ![ancestral_karyotype-trajectory](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/ancestral_karyotype-trajectory.png)
 
   
 
@@ -581,7 +581,7 @@ After inferring the ancestral karyotype, to understand how the ancestor evolved 
 
   `AKRUP -td dotplot_trajectory-APK-II_APK-III.conf `
 
-  ![APK-II_APK-III.trajectory](docfigures/APK-II_APK-III.trajectory.png)
+  ![APK-II_APK-III.trajectory](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/APK-II_APK-III.trajectory.png)
 
   
   
@@ -604,7 +604,7 @@ After inferring the ancestral karyotype, to understand how the ancestor evolved 
 
 
 
-![Fig-tree-karyotype](docfigures/Fig-tree-karyotype.png)
+![Fig-tree-karyotype](https://github.com/Genome-structure-evolution-analysis/AKRUP-example/blob/main/docfigures/Fig-tree-karyotype.png)
 
 
 Through karyotypic evolutionary trajectories we know that the 12 ancestral chromosomes of APK-II evolved to the 11 chromosomes of APK-III undergoing 1 fusion, after which the species diverged, undergoing 6 and 4 fusions to produce the modern genomes of Bdi and Tel respectively.
