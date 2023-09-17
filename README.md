@@ -153,9 +153,9 @@ Based on the AKRUP principle of "bottom-up" ancestral genome structure inference
 
 + Based on the obtained the blast, block, and *Ks* files, use the -lk parameter of AKRUP to load this information together for later use.
 
-  `AKRUP -rk Loadblock-Os_Bdi.conf`
+  `AKRUP -lk Loadblock-Os_Bdi.conf`
 
-  `AKRUP -rk Loadblock-Os_Bdi.conf`
+  `AKRUP -lk Loadblock-Os_Bdi.conf`
   
   
   
